@@ -23,13 +23,17 @@ This project rearchitects the B2B Design-to-Code workflow, eliminating complex l
 Use this prompt during live demo. Copy and paste the sentence below into Copilot Chat:
 
 "Add a new KPI card called Active Sessions showing the number 14,200 with a trending up indicator. Put it next to the existing KPI cards. Follow all repo rules in copilot-instructions.md."
+
 ---
+
 2. Demo: Add a Chart to AI Drop Zone
 
 Use this prompt during live demo. Copy and paste the sentence below into Copilot Chat:
 
 "Add a CPU Load by Device bar chart to the AI Widget Drop Zone at the bottom of the dashboard. Show 5 devices with fake CPU percentage data. Add the data to db.json first, then create the chart. Follow all repo rules in copilot-instructions.md."
+
 ---
+
 3. Demo: Add a Brand New Widget
 
 Use this prompt during live demo. Copy and paste the sentence below into Copilot Chat:
