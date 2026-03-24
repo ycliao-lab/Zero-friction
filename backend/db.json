@@ -3,7 +3,7 @@
     {
       "id": "network-health",
       "title": "Network Health",
-      "value": "98.2",
+      "value": "100.2",
       "unit": "%",
       "trend": "up",
       "trendLabel": "+1.5% from last hour",
