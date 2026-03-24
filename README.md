@@ -22,48 +22,6 @@ The dashboard displays real-time KPI cards, traffic/incident charts, and alert f
 
 ---
 
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Frontend | Angular 21, Angular Material (Material 3), ngx-echarts |
-| Backend | json-server (fake REST API from `backend/db.json`) |
-| Dev Environment | GitHub Codespaces, Dev Containers (Node.js 20) |
-| AI Governance | copilot-instructions.md, prompt files, agent profiles |
-
----
-
-## Project Structure
-
-```
-backend/
-  db.json                          ← Fake REST data (KPIs, traffic, incidents, alerts)
-
-frontend/src/app/
-  core/
-    models/api.models.ts           ← All typed DTOs
-    services/dashboard-api.service.ts ← API abstraction layer
-  dashboard/
-    dashboard.ts / .html / .scss   ← Main dashboard page
-    kpi-card/                      ← Generic KPI card (input-driven)
-    chart-widget/                  ← Generic chart widget (input-driven)
-    alert-list/                    ← Alert list component
-    chart-config.factory.ts        ← Pure functions generating ECharts options
-
-.github/
-  copilot-instructions.md          ← 20 production code rules for Copilot
-  prompts/                         ← 3 demo prompt files
-  agents/                          ← Custom agent profile
-  skills/                          ← Optional widget scaffolding skill
-
-docs/
-  demo-script.md                   ← Step-by-step demo script (3 scenarios)
-  review-checklist.md              ← Code review checklist
-  ai-working-rules.md             ← AI working rules summary
-```
-
----
-
 ## Getting Started
 
 ### Option A: GitHub Codespaces (Recommended)
@@ -135,6 +93,48 @@ Open Copilot Chat and paste:
 > Add a new AI Security Recommendations widget to the dashboard. It should show 3 recommendations, each with a priority level (High, Medium, Low) and a short description. Add the data to db.json first, then build the component. Follow all repo rules in copilot-instructions.md.
 
 **Fallback:** If any demo fails live, switch to the `demo-completed` branch which has scenario 2 pre-built.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | Angular 21, Angular Material (Material 3), ngx-echarts |
+| Backend | json-server (fake REST API from `backend/db.json`) |
+| Dev Environment | GitHub Codespaces, Dev Containers (Node.js 20) |
+| AI Governance | copilot-instructions.md, prompt files, agent profiles |
+
+---
+
+## Project Structure
+
+```
+backend/
+  db.json                          ← Fake REST data (KPIs, traffic, incidents, alerts)
+
+frontend/src/app/
+  core/
+    models/api.models.ts           ← All typed DTOs
+    services/dashboard-api.service.ts ← API abstraction layer
+  dashboard/
+    dashboard.ts / .html / .scss   ← Main dashboard page
+    kpi-card/                      ← Generic KPI card (input-driven)
+    chart-widget/                  ← Generic chart widget (input-driven)
+    alert-list/                    ← Alert list component
+    chart-config.factory.ts        ← Pure functions generating ECharts options
+
+.github/
+  copilot-instructions.md          ← 20 production code rules for Copilot
+  prompts/                         ← 3 demo prompt files
+  agents/                          ← Custom agent profile
+  skills/                          ← Optional widget scaffolding skill
+
+docs/
+  demo-script.md                   ← Step-by-step demo script (3 scenarios)
+  review-checklist.md              ← Code review checklist
+  ai-working-rules.md             ← AI working rules summary
+```
 
 ---
 
