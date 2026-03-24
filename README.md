@@ -124,7 +124,7 @@ See [docs/demo-script.md](docs/demo-script.md) for the full script. Quick summar
 
 Open Copilot Chat and paste:
 
-> Add a new KPI card called Active Sessions showing the number 14,200 with a trending up indicator. Put it next to the existing KPI cards. Follow all repo rules in copilot-instructions.md.
+> Add a new KPI card called Active Sessions showing the number 14,200 with a trending up indicator. Put it in the same row as the existing KPI cards. All KPI cards must stay in one single row and share the width equally at 100% total width, no matter how many cards there are. Follow all repo rules in copilot-instructions.md.
 
 ### Demo 2: Add a Chart to AI Drop Zone
 
