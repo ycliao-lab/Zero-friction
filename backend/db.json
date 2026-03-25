@@ -37,7 +37,7 @@
     {
       "id": "active-sessions",
       "title": "Active Sessions",
-      "value": "14,200",
+      "value": "12,345",
       "trend": "up",
       "trendLabel": "+800 from last hour",
       "icon": "group"
