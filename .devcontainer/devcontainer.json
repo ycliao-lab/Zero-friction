@@ -11,6 +11,7 @@
     "memory": "8gb"
   },
   "updateContentCommand": "npm install -g @angular/cli && cd frontend && npm ci --prefer-offline --no-audit && cd ../backend && npm ci --prefer-offline --no-audit || true",
+  "postCreateCommand": "git checkout -b feat/$(echo $GITHUB_USER)-$(date +%Y%m%d-%H%M%S)",
   "postStartCommand": "cd /workspaces/Zero-friction && git pull origin main && cd frontend && npm ci --prefer-offline --no-audit && cd ../backend && npm ci --prefer-offline --no-audit || true",
   "customizations": {
     "vscode": {
@@ -21,7 +22,9 @@
         "dbaeumer.vscode-eslint"
       ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "git.branchProtection": ["main"],
+        "git.branchProtectionPrompt": "alwaysCommitToNewBranch"
       }
     }
   }
