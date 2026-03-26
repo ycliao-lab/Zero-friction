@@ -7,8 +7,8 @@
     "3000": { "label": "JSON Server API", "onAutoForward": "notify" }
   },
   "hostRequirements": {
-    "cpus": 4,
-    "memory": "8gb"
+    "cpus": 8,
+    "memory": "16gb"
   },
   "updateContentCommand": "npm install -g @angular/cli && cd frontend && npm ci --prefer-offline --no-audit && cd ../backend && npm ci --prefer-offline --no-audit || true",
   "postCreateCommand": "git checkout -b feat/$(echo $GITHUB_USER)-$(date +%Y%m%d-%H%M%S)",
