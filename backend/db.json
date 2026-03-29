@@ -3,7 +3,7 @@
     {
       "id": "network-health",
       "title": "Network Health",
-      "value": "98.2",
+      "value": "100.2",
       "unit": "%",
       "trend": "up",
       "trendLabel": "+1.5% from last hour",
@@ -33,14 +33,7 @@
       "trend": "up",
       "trendLabel": "+0.03% this week",
       "icon": "cloud_done"
-    },
-    {
-      "id": "active-sessions",
-      "title": "Active Sessions",
-      "value": "12,345",
-      "trend": "up",
-      "trendLabel": "+800 from last hour",
-      "icon": "group"
+
     }
   ],
   "traffic": [
